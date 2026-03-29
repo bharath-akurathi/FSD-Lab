@@ -1,0 +1,13 @@
+<!-- <p>todos works!</p>
+<ul>
+  <li *ngFor="let todo of todos" >
+    {{todo.sno}} - {{todo.title}} - {{todo.desc}}
+  </li>
+</ul> -->
+
+<p>todos works!</p>
+<ul>
+  @for (todo of todos; track todo.sno) {
+    <li>{{ todo.sno }} - {{ todo.title }} - {{ todo.desc }}</li>
+  }
+</ul>

@@ -1,0 +1,2 @@
+Hello, this is a Node.js file operation example.
+This line is appended to the file.

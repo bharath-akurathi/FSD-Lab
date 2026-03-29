@@ -1,0 +1,13 @@
+<h2>Angular Form</h2>
+<form (ngSubmit)="submitForm()">
+  <div class="box" [ngClass]="{'highlight': changeColor}">
+    <label>Name : </label> <input type="text" [(ngModel)]="name"/><br>
+    <!-- old syntax :  -->
+    <!-- <p *ngIf="name">Hello, {{name}}!</p> -->
+    <!-- new syntax : -->
+    @if (name) { <p>Hello, {{name}}</p> }
+    <p class="message">{{message}}</p>
+    <button type="button" (click)="toggleHighlight()">Toggle CSS</button>
+    <button type="submit">Submit</button>
+  </div>
+</form>
