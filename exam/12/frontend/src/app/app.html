@@ -1,0 +1,13 @@
+<h2>Student Information Management</h2>
+
+<form (ngSubmit)="addStudent()">
+  Name : <input type="text" name="name" [(ngModel)]="student.name" required><br><br>
+  Course : <input type="text" name="course" [(ngModel)]="student.course" required><br><br>
+  <button type="submit">Add Student</button>
+</form>
+
+<ul>
+  <li *ngFor="let s of students">
+    {{ s.id }} - {{ s.name }} - {{ s.course }}
+  </li>
+</ul>
