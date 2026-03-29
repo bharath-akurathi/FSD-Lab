@@ -1,4 +1,4 @@
-œœ# Experiment: Simple Calculator using React JS (Vite)
+# Experiment: Simple Calculator using React JS (Vite)
 
 ## Aim
 
